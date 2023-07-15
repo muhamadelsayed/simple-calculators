@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try making calculator</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <button id="switch_calc" onclick="changeView()">change calculator view!</button>
+    <button id="switch_calc2" onclick="changeView2()">change calculator view!</button>
+    <!-- first calc start -->
+    <div id="cotainer1">
+    <form id="form_one">
+        <h1>First calculator</h1>
+        <label for="num1">write first number:</label><br>
+        <input type="number" id="num1" placeholder="Enter number one"><br>
+        <label for="num2">write second number:</label><br>
+        <input type="number" id="num2" placeholder="Enter number two"><br>
+        <br>
+        <form>
+            <p>Choose the type of operation :</p>
+            <div class="radio_items_one">
+                <label for="radio-add">addition :</label>
+                <input type="radio" id="radio-add" name="operate">
+        <br>
+        <label for="radio-sub">substruction :</label>
+        <input type="radio" id="radio-sub" name="operate">
+        <br>
+        <label for="radio-mult">multiply :</label>
+        <input type="radio" id="radio-mult" name="operate">
+        <br>
+        <label for="radio-divid">divid :</label>
+        <input type="radio" id="radio-divid" name="operate">
+        </div>
+        <br><br>
+        <button type="button" id="btn" onclick="calc()">calculate!</button><br>
+        <button type="button" onclick="rest()">rest</button>
+        <br><br>
+        <p id="result"></p>
+        </form>
+    </div>
+        <!-- first calc end -->
+        <!-- second calc start -->
+        <form id="second_calc">
+            <h1 class="head">Second calculator</h1>
+            <button type="button" class="one numby2" id="one" onclick="copyToP(1)" value="1">1</button>
+            <button type="button" class="two numby2" onclick="copyToP(2)">2</button>
+            <button type="button" class="three numby2" onclick="copyToP(3)">3</button>
+            <button type="button" class="four numby2" onclick="copyToP(4)">4</button>
+            <button type="button" class="five numby2" onclick="copyToP(5)">5</button>
+            <button type="button" class="six numby2" onclick="copyToP(6)">6</button>
+            <button type="button" class="seven numby2" onclick="copyToP(7)">7</button>
+            <button type="button" class="eight numby2" onclick="copyToP(8)">8</button>
+            <button type="button" class="nine numby2" onclick="copyToP(9)">9</button>
+            <button type="button" class="zero numby2" onclick="copyToP(0)">0</button>
+            <button type="button" class="float numby2" onclick="copyToP('.')">.</button>
+            <button type="button" class="add2 numby2" onclick="copyToP('+')">+</button>
+            <button type="button" class="mince2 numby2" onclick="copyToP('-')">-</button>
+            <button type="button" class="divid2 numby2" onclick="copyToP('/')">/</button>
+            <button type="button" class="mult2 numby2" onclick="copyToP('*')">*</button>
+            <button type="button" class="rest2 numby2" onclick="rest2()">c</button>
+            <button type="button" class="equaltwo numby2" onclick="doOperate()">=</button>
+            <p id="result_two">&nbsp;</p>
+            <p id="history">&nbsp;</p>
+            <button type="button" id="restHistory" onclick="rest_History()">Rest history </button>
+            <span class="place">History</span>
+        </form>
+
+ <!-- second calc end -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(104 72 72);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+#cotainer1{
+    border: 0.3em solid rgb(185, 130, 130);
+    border-radius: 5px;
+    width: 50em;
+    height: 37.5em;
+    display: none;
+}
+#form_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotateY(90deg); */
+}
+h1,label,option,p{
+    color: white;
+}
+#result{
+    width: 50%;
+    height: 50px;
+    background-color:rgb(254, 240, 255) ;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* sec calc */
+#second_calc{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,5em);
+    grid-template-rows: repeat(6,5em);
+    grid-template-areas:
+    "head head head head"
+    "p p p c"
+    "one two three divid2"
+    "four five six mult2"
+    "seven eight nine mince2"
+    "zero float eqaul add2"  ;
+    gap: 5px;
+    background-color: darksalmon;
+    width: 35em;
+    border: 0.3em solid rgb(138, 83, 65);
+    border-radius: 5px;
+    position: relative;
+}
+.head{
+    grid-area:head ;
+}
+.numby2{
+    font-size:20px;
+    border:1px solid rgb(167, 108, 0);
+    border-radius:50%;
+}
+.numby2:hover {
+    background-color: rgb(19, 8, 8);
+    color: white;
+    box-shadow: -0.2em 0.5em 10px rgb(117, 115, 115);
+}
+.add2,
+.mince2,
+.divid2,
+.mult2{
+background-color: gray;
+color: white;
+}
+.equaltwo{
+    background-color: red;
+}
+#history{
+    background-color: #f8e3e7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6em;
+    height: 30em;
+    color: black;
+    border-radius: 5px;
+}
+#restHistory{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size:0.2em;
+    width: 30em;
+}
+#switch_calc2{
+    display: none;
+}
+.one{
+    grid-area:one ;
+}
+.two{
+    grid-area:two ;
+}
+.three{
+    grid-area:three ;
+}
+.four{
+    grid-area:four ;
+}
+.five{
+    grid-area:five ;
+}
+.six{
+    grid-area:six ;
+}
+.seven{
+    grid-area:seven ;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area:nine ;
+}
+.zero{
+    grid-area: zero;
+}
+.float{
+    grid-area: float;
+    font-size: x-large;
+}
+.add2{
+    grid-area: add2;
+}
+.mince2{
+    grid-area: mince2;
+}
+.divid2{
+    grid-area: divid2;
+}
+.mult2{
+    grid-area: mult2;
+}
+.rest{
+    grid-area: c;
+}
+.equaltwo{
+    grid-area: eqaul;
+}
+.float{
+    grid-area: float;
+}
+#result_two{
+    grid-area: p;
+    background-color:rgb(254, 240, 255) ;
+    color: black;
+    font-size:20px;
+    border:1px solid orange;
+    border-radius:5px
+}
+.place{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    color: gray;
+}
