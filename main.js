@@ -37,8 +37,8 @@ function copyToP(val) {
 }
 function doOperate() {
     console.log(eval(resultTwo.innerText));
-    resultTwo.innerHTML = (eval(resultTwo.innerText));
-    document.getElementById("history").innerHTML += (eval(resultTwo.innerText)) + `<hr>`;
+    resultTwo.innerHTML = parseFloat(eval(resultTwo.innerText).toFixed(10));
+    document.getElementById("history").innerHTML += parseFloat(eval(resultTwo.innerText).toFixed(10)) + `<hr>`;
 }
 function rest2(){
     document.getElementById("result_two").innerHTML = "";
